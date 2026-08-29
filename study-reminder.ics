@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI Learning//Study Reminder//CN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI 学习计划
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-study-morning-0600@salomeailin.ai
+DTSTAMP:20260829T150507Z
+DTSTART;TZID=Asia/Shanghai:20260830T060000
+DTEND;TZID=Asia/Shanghai:20260830T063000
+RRULE:FREQ=DAILY
+SUMMARY:☀️ AI 早课 · 学新内容（30 分钟）
+LOCATION:电脑前
+DESCRIPTION:早课 = 学新的。脑子最清醒的时候用来啃新概念。\n\ncd ~/Synchronization/Github_File/ai\npython3 stage0-python/lesson01_hello.py\n\n1. 先跑一遍看输出\n2. 逐行读注释，看懂每行在干嘛\n3. 看不懂就问 Claude，不要硬扛\n\n到 30 分钟就停，练习留到晚上做。
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:☀️ AI 早课时间 —— 就 30 分钟
+TRIGGER:PT0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-study-evening-1900@salomeailin.ai
+DTSTAMP:20260829T150507Z
+DTSTART;TZID=Asia/Shanghai:20260830T190000
+DTEND;TZID=Asia/Shanghai:20260830T193000
+RRULE:FREQ=DAILY
+SUMMARY:🌙 AI 晚课 · 动手练习（30 分钟）
+LOCATION:电脑前
+DESCRIPTION:晚课 = 自己写。早上看懂了不等于会，手写一遍才算。\n\ncd ~/Synchronization/Github_File/ai\n\n1. 不看早上的代码，凭记忆做文件底部的【练习】\n2. 卡住了再回去翻，翻过就记下卡在哪\n3. 做完在 README.md 的进度里打勾\n\n间隔 12 小时复习一次，比连着学两遍记得牢得多。
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🌙 AI 晚课 —— 该动手写了
+TRIGGER:PT0S
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:10 分钟后开始 AI 晚课，收个尾
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
