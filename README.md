@@ -56,3 +56,4 @@ python3 stage0-python/lesson01_hello.py
   - [ ] lesson01 第一个程序
   - [ ] lesson02 变量与数据类型
   - [ ] lesson03 条件判断
+  - [ ] lesson04 循环
